@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: silver;
+    font-family: sans-serif;
+}
+.item{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+    background-image: url("/images/thumbnail-1.webp");
+    background-size: cover;
+}
+.item .discount{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 10px;
+}
+.item .add{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.item .add button{
+    margin-top: 40px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-weight: bold;
+}
