@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Forms</h1>
+  <p>Lorem ipsum, dolor sit  <em>em</em> amet <strong>strong</strong> consectetur adipisicing elit. Quia, ratione.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <strike>strike</strike> . Magni, sunt.</p>
+  <a href="mailto:ssaida@gmail.com">mail</a>
+  <a href="tel:+545349">Mobile</a>
+  <article id="main-form">
+    <form action="https://httpbin.org/get" method="get">
+      <p>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" autocomplete="on" required placeholder="First Name" autofocus>
+      </p>
+      <p>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" autocomplete="on" required placeholder="Last Name">
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" autocomplete="on" required placeholder="Age">
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Password" autocomplete="on">
+      </p>
+      <p>
+        <label for="mobile">Mobile</label>
+        <input type="number" name="mobile" id="mobile" placeholder="Mobile number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </p>
+      <p>
+        <label for="decade">Decade</label>
+        <input type="number" name="decade" id="decade" min="1900" max="2020" step="10" placeholder="Decade">
+      </p>
+      <p>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" placeholder="Date" autocomplete="on">
+      </p>
+      <p>
+        <label for="coffee">Coffee</label>
+        <select name="coffee" id="coffee">
+          <option selected disabled>Coffee</option>
+          <optgroup label="Regular">
+            <option value="black">Black</option>
+            <option value="sadah">Sadah</option>
+          </optgroup>
+          <optgroup label="Ajnbe">
+            <option value="latte">Latte</option>
+            <option value="cappucino">Cappucino</option>
+            <option value="other">Other</option>
+          </optgroup>
+        </select>
+      </p>
+        <fieldset>
+          <legend>Radio buttons - Favorate Food</legend>
+          <p>
+            <label for="rice">Rice</label>
+            <input type="radio" name="food" id="rice" value="rice">
+            <label for="meet">Meet</label>
+            <input type="radio" name="food" id="meet" value="meet">
+            <label for="laban">Laban</label>
+            <input type="radio" name="laban" id="laban" value="laban">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Favorate Cars</legend>
+          <p>
+            <label for="bmw">BMW</label>
+            <input type="checkbox" name="car" id="bmw" value="bmw">
+          </p>
+          <p>
+            <label for="mazda">Mazda</label>
+            <input type="checkbox" name="car" id="mazda" value="mazda">
+          </p>
+          <p>
+            <label for="fiat">Fiat</label>
+            <input type="checkbox" name="car" id="fiat" value="fiat">
+          </p>
+        </fieldset>
+        <p>
+          <label for="bio">Bio</label>
+          <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter bio"></textarea>
+        </p>
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </form>
+  </article>
+</body>
+</html>
