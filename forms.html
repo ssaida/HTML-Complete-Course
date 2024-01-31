@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="forms.css">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <h2>HTML Forms</h2>
+  <fieldset>
+    <legend>HTML Forms</legend>
+    <form action="https://httpbin.org//get" method="get">
+      <p>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" autocomplete="on" required placeholder="First Name" autofocus>
+      </p>
+      <p>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required autocomplete="on">
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="69" placeholder="Age" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="birthDay">Birth Day</label>
+        <input type="date" name="birthDay" id="birthDay" placeholder="Birth Day" required autocomplete="on">
+      </p>
+      <p>
+        <label for="food">Food</label>
+        <select name="food" id="food">
+          <option disabled selected>Choose Food</option>
+          <option value="mashawe">Mashawe</option>
+          <option value="rice">Rice</option>
+          <option value="meet">Meet</option>
+          <option value="fruits">Fruits</option>
+        </select>
+      </p>
+      <p>
+        <h3>Pets</h3>
+        <input type="radio" name="pets" id="dog" value="dog"><label for="dog">Dog</label>
+        <input type="radio" name="pets" id="dog" value="cat"><label for="dog">Cat</label>
+        <input type="radio" name="pets" id="dog" value="monkey"><label for="monkey">Monkey</label>
+        <input type="radio" name="pets" id="dog" value="other"><label for="other">Other</label>
+      </p>
+      <p>
+        <h3>Boxes</h3>
+        <input type="checkbox" name="box" id="box" value="box"><label for="box">Box</label>
+        <input type="checkbox" name="box" id="box" value="box"><label for="box">Box</label>
+        <input type="checkbox" name="box" id="box" value="box"><label for="box">Box</label>
+        <input type="checkbox" name="box" id="box" value="box"><label for="box">Box</label>
+        <input type="checkbox" name="box" id="box" value="box"><label for="box">Box</label>
+      </p>
+      <p>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+  </fieldset>
+</body>
+</html>
