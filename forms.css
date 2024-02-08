@@ -7,3 +7,13 @@ body{
   background-color: silver;
   font-family: sans-serif;
 }
+label{
+  width: 100px;
+  display: inline-block;
+}
+input{
+  padding: 4px 10px;
+}
+p{
+  margin: 4px 0;
+}
