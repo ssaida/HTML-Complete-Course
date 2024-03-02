@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>Forms</title>
+</head>
+<body>
+  <h1>HTML Forms</h1>
+  <form action="https://httpbin.org/get" method="get">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Name" required autocomplete="on" autofocus>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" required autocomplete="on">
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password" autocomplete="on">
+    </p>
+    <p>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" autocomplete="on" required placeholder="Age">
+    </p>
+    <p>
+      <label for="decade">Decade</label>
+      <input type="number" name="decade" id="decade" placeholder="Decade" min="1900" max="2020" step="10">
+    </p>
+    <p>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </p>
+    <p>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" placeholder="Date">
+    </p>
+    <p>
+      <label for="food">Food</label>
+      <select name="food" id="food">
+        <option selected disabled>Choose favorate food</option>
+        <optgroup label="regular">
+          <option value="mashawe">Mashawe</option>
+          <option value="rice">Rice</option>
+        </optgroup>
+        <optgroup label="fruits">
+          <option value="banana">Banana</option>
+          <option value="apple">Apple</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      <fieldset>
+        <legend>pets</legend>
+        <label for="dog">Dog</label>
+        <input type="radio" name="pet" id="dog" value="dog">
+        <label for="cat">Cat</label>
+        <input type="radio" name="pet" id="dog" value="cat">
+        <label for="monkey">Monkey</label>
+        <input type="radio" name="pet" id="dog" value="monkey">
+      </fieldset>
+    </p>
+    <p>
+      <fieldset>
+        <legend>Bio</legend>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter bio"></textarea>
+      </fieldset>
+    </p>
+    <p>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </p>
+  </form>
+</body>
+</html>
