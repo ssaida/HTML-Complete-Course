@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="forms.css">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <article id="contact">
+    <h2>Contact</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <form action="https://httpbin.org/get" method="get">
+      <p>
+        <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Name" required autocomplete="on" autofocus>
+      </p>
+      <p>
+        <label for="email">Email</label>
+      <input type="text" name="email" id="email" placeholder="Email" required autocomplete="on">
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="055-555-5555" autocomplete="on">
+      </p>
+      <p>
+        <label for="decade">Decade</label>
+        <input type="number" name="decade" id="decade" step="10" min="1900" max="2020" placeholder="Decade">
+      </p>
+      <p>
+        <label for="coffee">Coffee</label>
+        <select name="coffee" id="coffee">
+          <option disabled selected>Choose Coffee</option>
+          <optgroup label="out">
+            <option value="regular">Regular</option>
+            <option value="lattee">Lattee</option>
+          </optgroup>
+          <optgroup label="arab">
+            <option value="gahwa">Gahwa</option>
+            <option value="sadah">Sadah</option>
+          </optgroup>
+        </select>
+      </p>
+      <fieldset>
+        <legend>Food</legend>
+        <input type="radio" name="food" id="food" value="mashawe">
+        <label for="mashawe">Mashawe</label>
+        <input type="radio" name="food" id="food" value="Rice">
+        <label for="rice">Rice</label>
+        <input type="radio" name="food" id="food" value="banana">
+        <label for="banana">Banana</label>
+      </fieldset>
+      <fieldset>
+        <legend>Pets</legend>
+        <input type="checkbox" name="Pets" id="dog" value="dog">
+        <label for="dog">Dog</label>
+        <input type="checkbox" name="Pets" id="cat" value="cat">
+        <label for="cat">Cat</label>
+        <input type="checkbox" name="Pets" id="monkey" value="monkey">
+        <label for="monkey">Monkey</label>
+      </fieldset>
+      <fieldset>
+        <legend>Bio</legend>
+        <textarea name="Bio" id="bio" cols="30" rows="10"></textarea>
+      </fieldset>
+      <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+  </article>
+</body>
+</html>
