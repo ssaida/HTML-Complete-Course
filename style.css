@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: silver;
+  font-family: sans-serif;
+}
+figure{
+  display: inline-block;
+  padding: 8px;
+  margin-top: 12px;
+  border: 2px solid #000;
+}
+table, th, td, caption{
+  border: 1px solid #000;
+}
+label{
+  display: block;
+}
